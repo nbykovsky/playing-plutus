@@ -45,6 +45,8 @@ library
       Plutus.Contracts.Game
     build-depends:
       base >= 4.9 && < 5,
+      lens,
+      data-default,
       aeson,
       bytestring,
       containers,
@@ -54,6 +56,11 @@ library
       plutus-tx-plugin,
       plutus-tx,
       plutus-ledger,
+      plutus-use-cases,
+      text,
+      tasty -any,
+      tasty-hunit -any,
+      tasty-hedgehog >=0.2.0.0
     hs-source-dirs: src examples/src
 
 test-suite plutus-example-projects-test
